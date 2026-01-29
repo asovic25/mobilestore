@@ -1,0 +1,15 @@
+# Ignore database files
+*.sql
+*.db
+
+# Ignore environment/config files
+.env
+config.php
+
+# Node.js or PHP dependencies (if any)
+node_modules/
+vendor/
+
+# OS / system files
+.DS_Store
+Thumbs.db

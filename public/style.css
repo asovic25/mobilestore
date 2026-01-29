@@ -1,0 +1,295 @@
+/* ===============================
+   General Styling
+================================= */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* ===============================
+   Navbar
+================================= */
+.navbar {
+  background: linear-gradient(90deg, #0d8b36, #0f9d58);
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #fff !important;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #ffe9ec !important;
+}
+
+/* ===============================
+   Hero Section
+================================= */
+.hero-carousel {
+  position: relative;
+  overflow: hidden;
+  max-height: 70vh;
+}
+.hero-carousel img {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+  animation: slideDown 1.2s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   Sticky Categories
+================================= */
+.sticky-categories {
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 56px;
+  z-index: 10;
+}
+.sticky-categories .nav-link {
+  color: #0f9d58;
+  padding: 10px 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.sticky-categories .nav-link:hover {
+  color: #ff4b6e;
+}
+
+/* ===============================
+   Search Bar
+================================= */
+form.d-flex input {
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+}
+form.d-flex button {
+  border-radius: 25px;
+  background-color: #0f9d58;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+form.d-flex button:hover {
+  background-color: #ff4b6e;
+}
+
+/* ===============================
+   Products Grid
+================================= */
+.card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  font-weight: 600;
+  color: #333;
+}
+.btn-success {
+  background-color: #0f9d58;
+  border: none;
+  transition: 0.3s;
+}
+.btn-success:hover {
+  background-color: #ff4b6e;
+}
+
+/* ===============================
+   About Section
+================================= */
+section.bg-light {
+  background-color: #fdfdfd !important;
+}
+section h3 {
+  font-weight: 700;
+  color: #0f9d58;
+}
+section p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+
+
+/* ===============================
+   Responsive
+================================= */
+@media (max-width: 768px) {
+  .hero-carousel img {
+    height: 50vh;
+  }
+}
+/* ===============================
+   HERO CAPTION ANIMATION
+================================= */
+.hero-carousel {
+  position: relative;
+  max-height: 70vh;
+  overflow: hidden;
+}
+
+.hero-carousel .carousel-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-img {
+  object-fit: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.text-rose {
+  color: #ff4b6e;
+}
+
+.btn-rose {
+  background-color: #ff4b6e;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 30px;
+  border-radius: 30px;
+  transition: 0.4s ease;
+}
+.btn-rose:hover {
+  background-color: #fff;
+  color: #ff4b6e;
+  transform: scale(1.05);
+}
+
+/* Animation for text appearing from top */
+.animate-slide {
+  animation: slideDown 1.2s ease-out;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .hero-img {
+    height: 50vh;
+  }
+  .carousel-caption h1 {
+    font-size: 1.8rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+}
+.footer-section a:hover i {
+  color: #ff4da6;
+  transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+}
+.navbar .rounded-circle {
+  border: 2px solid #fff;
+}
+/*for index.php*/
+
+body {
+  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-bar input {
+  width: 280px;
+}
+
+.category-sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  height: 100%;
+  width: 250px;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  z-index: 1050;
+}
+
+.category-sidebar.open {
+  right: 0;
+}
+
+.category-sidebar ul li {
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.category-sidebar ul li:hover {
+  background-color: #f0fdf4;
+  color: #198754;
+}
+
+.product-card {
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 14px;
+}

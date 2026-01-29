@@ -1,0 +1,212 @@
+/* =======================
+    General Body & Fonts
+======================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #333;
+}
+
+/* =======================
+    Navbar
+======================= */
+.navbar {
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #ffe6f0 !important;
+    text-decoration: underline;
+}
+
+/* =======================
+    Dashboard Cards (Stats)
+======================= */
+.card {
+    border-radius: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-body h5 {
+    font-weight: 500;
+    color: #555;
+}
+
+.card-body h3 {
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* =======================
+    Table Styling
+======================= */
+.table {
+    background-color: #fff;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9f7f2;
+}
+
+.table th, .table td {
+    vertical-align: middle !important;
+}
+
+.table th {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.table td {
+    font-size: 0.92rem;
+}
+
+/* =======================
+    Badges (Stock Status)
+======================= */
+.badge {
+    font-weight: 500;
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+}
+
+.badge.bg-success {
+    background-color: #28a745 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* =======================
+    Forms (Add/Edit Product & Category)
+======================= */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+form label {
+    font-weight: 500;
+    color: #444;
+}
+
+form .form-control, form .form-select {
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.75rem;
+}
+
+form button {
+    border-radius: 0.4rem;
+    padding: 0.5rem 1.2rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    transform: translateY(-2px);
+}
+
+/* =======================
+    Buttons
+======================= */
+.btn-outline-primary {
+    color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-outline-secondary {
+    color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+/* =======================
+    Images
+======================= */
+img.rounded {
+    border-radius: 0.5rem;
+}
+
+/* =======================
+    Responsive Adjustments
+======================= */
+@media (max-width: 768px) {
+    .card-body h3 {
+        font-size: 1.5rem;
+    }
+
+    .table th, .table td {
+        font-size: 0.85rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+}
+
+/* =======================
+    Alerts
+======================= */
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+    border-radius: 0.4rem;
+}
+
+/* =======================
+    Card Header for Tables
+======================= */
+.card-header {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* =======================
+    Minor Fixes
+======================= */
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
